@@ -16,7 +16,7 @@
 
     <a class="navbar-brand" href="index.html">Logo</a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -24,9 +24,9 @@
 
         <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html">Contact us</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact us</a></li>
     
         </ul>
 
@@ -36,6 +36,95 @@
 
 </div>
 </div>
+
+<!--This is where the breadcrumb start-->
+<ol class="breadcrumb container">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active">About Us</li>
+
+</ol>
+
+<!---This is where the breadcrumb ends-->
+
+<!---The carousel starts here-->
+<div class="carousel slide container" id="carouselExampleIndicators">
+
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+    <!--carousel inner starts here-->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/firstSlide.jpg" class="d-block w-100" width="450px" height="400px" alt="This is the first slide"/>
+        </div>
+
+        <div class="carousel-item">
+            <img src="images/secondSlide.jpg" class="d-block w-100" width="450px" height="400px" alt="This is the second slide"/>
+        </div>
+
+        <div class="carousel-item">
+            <img src="images/background.jpg" class="d-block w-100" width="450px" height="400px" alt="This is the third slide"/>
+        </div>
+
+    </div>
+
+    <!---carousel inner ends here-->
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+
+</div>
+<!--the carousel ends here-->
+
+<hr/>
+<br/>
+<div class="container">
+    <div class="row">
+
+        <div class="card col-6">
+            <img src="images/buffet.png" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <h3 class="card-title">Pizza</h3>
+                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eius expedita molestiae et perferendis fugit quaerat aliquam animi, beatae quibusdam at veniam amet voluptas in officiis ipsam repudiandae ullam ducimus.</p>
+            </div>
+            
+            </div>
+
+            <div class="card col">
+                <img src="images/Off.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                    <h3 class="card-title">Bulb</h3>
+                    <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eius expedita molestiae et perferendis fugit quaerat aliquam animi, beatae quibusdam at veniam amet voluptas in officiis ipsam repudiandae ullam ducimus.</p>
+                </div>
+                
+                </div>
+
+
+
+                <div class="card col">
+                    <img src="images/vadonut.png" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h3 class="card-title">Doughnut</h3>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eius expedita molestiae et perferendis fugit quaerat aliquam animi, beatae quibusdam at veniam amet voluptas in officiis ipsam repudiandae ullam ducimus.</p>
+                    </div>
+                    
+                    </div>
+
+
+    </div>
+</div>
+
 <br/>
 <br/>
 <div class="container">
@@ -69,7 +158,20 @@
 
             </table>
         </div>
-        <div class="bg-primary col">Third Item</div>
+        <div class="bg-primary col">
+            <div class="card">
+                <ul class="list-group">
+                    <li class="list-group-item">T-shirt</li>
+                    <li class="list-group-item">Shoes</li>
+                    <li class="list-group-item">Bags</li>
+                    <li class="list-group-item">Jewlries</li>
+
+                </ul>
+
+
+            </div>
+
+        </div>
 
 
     </div>
@@ -78,6 +180,47 @@
 
 </div>
 
+<br/>
+
+<!--This is where the accordion starts-->
+<h1 class="text-center">Terms and Conditions</h1>
+<div class="accordion container" id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Terms # 1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                
+                </div>
+
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Terms # 2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                
+                </div>
+
+            </div>
+
+
+
+</div>
+<!--This is where the accordion ends-->
 
 
 
@@ -85,9 +228,7 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-
 </body>
 </html>
